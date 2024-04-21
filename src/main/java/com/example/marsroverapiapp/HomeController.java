@@ -9,15 +9,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class HomeController {
     @GetMapping("/")
     public String getHomeView(ModelMap model) {
-        model.put("name", "Sergei Page");
-        model.put("address", "123, Fake St.");
-        return "index";
-    }
-
-    @GetMapping("/testing")
-    public String getTestView(ModelMap model) {
-        model.put("name", "John Doe");
-        model.put("address", "1234, Fake St.");
+//        model.put("name", "Sergei Page");
+//        model.put("address", "123, Fake St.");
         return "index";
     }
 }
