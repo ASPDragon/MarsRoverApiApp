@@ -1,0 +1,1 @@
+document.getElementById('curiosity').addEventListener('click', function() {});
