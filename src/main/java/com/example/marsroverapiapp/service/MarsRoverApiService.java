@@ -10,7 +10,7 @@ public class MarsRoverApiService {
     public MarsRoverApiResponse getRoverData(String roverType) {
         RestTemplate rt = new RestTemplate();
         String url = "https://api.nasa.gov/mars-photos/api/v1/rovers/" +
-                roverType + "/photos?sol=2&api_key=DEMO_KEY";
+                roverType +"/photos?sol=2&page=2&api_key=DEMO_KEY";
 
         ResponseEntity<MarsRoverApiResponse> response = rt.getForEntity(url, MarsRoverApiResponse.class);
 
