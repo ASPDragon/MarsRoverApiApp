@@ -10,22 +10,21 @@ import org.springframework.web.bind.annotation.RequestParam;
 import com.example.marsroverapiapp.response.MarsRoverApiResponse;
 import com.example.marsroverapiapp.service.MarsRoverApiService;
 
+import io.micrometer.common.util.StringUtils;
+
 @Controller
 public class HomeController {
     @Autowired
     private MarsRoverApiService roverService;
 
     @GetMapping("/")
-    public String getHomeView(ModelMap model) {
-        MarsRoverApiResponse roverData = roverService.getRoverData("spirit");
-        model.put("roverData", roverData);
+    public String getHomeView(ModelMap model, @RequestParam(required = false) String marsApiRoverData) {
+        // If request param is empty, then set a default value
+        if (StringUtils.isEmpty(marsApiRoverData)) {
+            marsApiRoverData = "curiosity";
+        }
 
-        return "index";
-    }
-
-    @PostMapping("/")
-    public String postHomView(ModelMap model, @RequestParam String marsApiRoverData) {
-        MarsRoverApiResponse roverData = roverService.getRoverData(marsApiRoverData);
+        MarsRoverApiResponse roverData = roverService.getRoverData("curiosity");
         model.put("roverData", roverData);
 
         return "index";
