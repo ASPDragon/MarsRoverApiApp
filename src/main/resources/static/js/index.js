@@ -15,16 +15,16 @@ function getUrlParameter(name) {
     return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
 };
 
-let marsRoverType = getUrlParameter("marsApiRoverData");
+let marsRoverType = getUrlParameter('marsApiRoverData');
 		
 highlightBtnByRoverType(marsRoverType);
 
-let marsSol = getUrlParameter("marsSol";
+let marsSol = getUrlParameter("marsSol");
 document.getElementById("marsSol").value = marsSol;
 
 function highlightBtnByRoverType (roverType) {
 	if (roverType == '') 
-		roverType = "Opportunity";
+		roverType = "Curiosity";
 	
 	document.getElementById('marsApi'+roverType).classList.remove("btn-secondary");
 	document.getElementById('marsApi'+roverType).classList.add("btn-primary");

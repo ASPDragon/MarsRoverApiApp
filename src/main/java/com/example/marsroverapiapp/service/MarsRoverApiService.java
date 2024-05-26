@@ -14,7 +14,7 @@ public class MarsRoverApiService {
 
         ResponseEntity<MarsRoverApiResponse> response = rt.getForEntity(
             "https://api.nasa.gov/mars-photos/api/v1/rovers/" + roverType + 
-            "/photos?sol=2&page=" + marsSol + "&api_key=" + API_KEY, MarsRoverApiResponse.class);
+            "/photos?sol=" + marsSol + "&api_key=" + API_KEY, MarsRoverApiResponse.class);
 
         return response.getBody();
     }
