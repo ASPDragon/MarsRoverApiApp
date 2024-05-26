@@ -1,7 +1,5 @@
 package com.example.marsroverapiapp.response;
 
-import java.util.Date;
-
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class MarsRover {
