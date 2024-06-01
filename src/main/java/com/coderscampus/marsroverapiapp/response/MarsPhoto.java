@@ -1,4 +1,4 @@
-package com.example.marsroverapiapp.response;
+package com.coderscampus.marsroverapiapp.response;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

@@ -1,4 +1,4 @@
-package com.example.marsroverapiapp.response;
+package com.coderscampus.marsroverapiapp.response;
 
 import java.util.ArrayList;
 import java.util.List;

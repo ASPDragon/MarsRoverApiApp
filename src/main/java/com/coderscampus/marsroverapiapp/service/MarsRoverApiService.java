@@ -1,6 +1,6 @@
-package com.example.marsroverapiapp.service;
+package com.coderscampus.marsroverapiapp.service;
 
-import com.example.marsroverapiapp.response.MarsRoverApiResponse;
+import com.coderscampus.marsroverapiapp.response.MarsRoverApiResponse;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;

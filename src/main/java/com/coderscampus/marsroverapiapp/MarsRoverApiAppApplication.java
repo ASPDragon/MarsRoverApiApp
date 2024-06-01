@@ -1,4 +1,4 @@
-package com.example.marsroverapiapp;
+package com.coderscampus.marsroverapiapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,5 +9,4 @@ public class MarsRoverApiAppApplication {
     public static void main(String[] args) {
         SpringApplication.run(MarsRoverApiAppApplication.class, args);
     }
-
 }

@@ -1,6 +1,5 @@
-package com.example.marsroverapiapp;
+package com.coderscampus.marsroverapiapp;
 
-import com.example.marsroverapiapp.response.MarsRoverApiResponse;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
