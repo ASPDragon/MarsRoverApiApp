@@ -1,7 +1,5 @@
 package com.coderscampus.dto;
 
-import org.springframework.web.bind.annotation.RequestParam;
-
 public class HomeDto {
     private String marsApiRoverData;
     private Integer marsSol;
@@ -91,6 +89,7 @@ public class HomeDto {
     public Boolean getCameraPancam() {
         return cameraPancam;
     }
+    
     public void setCameraPancam(Boolean cameraPancam) {
         this.cameraPancam = cameraPancam;
     }
@@ -98,7 +97,7 @@ public class HomeDto {
     public Boolean getCameraMinites() {
         return cameraMinites;
     }
-    
+
     public void setCameraMinites(Boolean cameraMinites) {
         this.cameraMinites = cameraMinites;
     }
