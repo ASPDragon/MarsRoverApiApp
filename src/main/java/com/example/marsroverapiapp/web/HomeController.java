@@ -19,7 +19,8 @@ public class HomeController {
 
     @GetMapping("/")
     public String getHomeView(ModelMap model, @RequestParam(required = false) String marsApiRoverData,
-        @RequestParam(required = false) Integer marsSol) {
+        @RequestParam(required = false) Integer marsSol,
+        @RequestParam(required = false) boolean flexCheckDefault) {
         // If request param is empty, then set a default value
         if (StringUtils.isEmpty(marsApiRoverData)) {
             marsApiRoverData = "curiosity";
